@@ -12,3 +12,10 @@ def green(string):
 
 def yellow(string):
     print(YELLOW + str(string) + END)
+
+def output(strategy_name, user, best5, worst5):
+    bold("USER {}".format(user))
+    green(strategy_name + " CLOSEST 5 products")
+    [green(str(good)) for good in best5]
+    yellow(strategy_name + " FARTHEST 5 products")
+    [yellow(str(bad)) for bad in worst5[::-1]]

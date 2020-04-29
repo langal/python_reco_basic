@@ -14,7 +14,9 @@ provides a function to return a random set of tags with random values.
 Strategies.py contains functions to calculate the Euclidian distance, Cosine similarity, and Hamming distance between
 two objects that have tags.
 
-RecommendationApplication.py provides functions to get "recommendations" based on the function in Strategies.py
+RecommendationApplication.py provides functions to get "recommendations" based on the function in Strategies.py.
+
+Workers.py provides handler functions to handle events.
 
 simluate.py is basically a test program which dumps users in q simple memory based PubSub (https://pypi.org/project/PyPubSub/).
 
