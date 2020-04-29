@@ -8,4 +8,5 @@ RUN pip install --upgrade pip && \
     
 VOLUME /app
 COPY . /app
-CMD sleep infinity
+WORKDIR /app
+CMD python simulate.py
