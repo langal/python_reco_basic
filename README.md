@@ -2,7 +2,7 @@
 
 This is a very simple simulation of a Recommendation system - matching a User to Products.
 
-**ProductApplication.py** models a product service and returns a list of *Products*.
+[ProductApplication.py](ProductApplication.py) models a product service and returns a list of *Products*.
 
 **UserApplication.py** models a user service and provides a function to get a *User*.
 
