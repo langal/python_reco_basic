@@ -5,7 +5,7 @@ import os
 from Tags import get_random_tags
 from Entity import AttributedEntity
 
-NUM_PRODUCTS = int(os.environ.get('NUM_PRODUCTS', 10))
+NUM_PRODUCTS = int(os.environ.get('NUM_PRODUCTS', 1000))
 
 """
 A very simplified representation of a Product

@@ -4,6 +4,7 @@ This models a Recommendation module or application.
 import heapq
 import json
 
+import ProductApplication
 from Strategies import *
 
 """
@@ -39,7 +40,8 @@ def get_single_distance(object1, object2, strategy):
 """
 This gets the distances between one objects (ie. a User) and many objects (ie. Products)
 """
-def get_recommendations(user, products, strategy):
+def get_recommendations(user, strategy):
+    products = ProductApplication.get_products()
     distances = []
     for product in products:
         distance = Distance(user, product, get_single_distance(user, product, strategy))
