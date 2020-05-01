@@ -14,7 +14,7 @@ def euclidian(object1, object2):
     vector2 = []
     for key in all_keys:
         """
-        Basically, make an n-dimensional vector.  A dimention is a key like 'formal'.  The 'rating' is the distance is goes to that dimenion.
+        Basically, make an n-dimensional vector.  A dimension is a key like 'formal'.  The 'rating' is the distance is goes to that dimenion.
         """
         vector1.append(object1.tags.get(key, 0.0))
         vector2.append(object2.tags.get(key, 0.0))
@@ -33,7 +33,7 @@ def cosine(object1, object2):
     vector2 = []
     for key in all_keys:
         """
-        Basically, make an n-dimensional vector.  A dimention is a key like 'formal'.  The 'rating' is the distance is goes to that dimenion.
+        Basically, make an n-dimensional vector.  A dimension is a key like 'formal'.  The 'rating' is the distance is goes to that dimenion.
         """
         vector1.append(object1.tags.get(key, 0.0))
         vector2.append(object2.tags.get(key, 0.0))
@@ -49,7 +49,7 @@ def hamming(object1, object2):
     vector2 = []
     for key in all_keys:
         """
-        Basically, make an n-dimensional vector.  A dimention is a key like 'formal'.  The 'rating' is the distance is goes to that dimenion.
+        Basically, make an n-dimensional vector.  A dimension is a key like 'formal'.  The 'rating' is the distance is goes to that dimenion.
         """
         vector1.append(key in object1.tags.keys())
         vector2.append(key in object2.tags.keys())
