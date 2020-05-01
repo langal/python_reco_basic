@@ -18,7 +18,7 @@ two objects that have tags.
 
 **Workers.py** provides handler functions to handle events.
 
-simluate.py is basically a test program which dumps users in q simple memory based PubSub (https://pypi.org/project/PyPubSub/).
+**simluate.py** is basically a test program which dumps users to a simple memory based PubSub (https://pypi.org/project/PyPubSub/).
 
-Listeners are implemnted using the 3 stratgies from **Strategies.py** and 
-results are just dumped to standard out using some DislayUtil function.
+Listeners are implemented using the 3 strategies from **Strategies.py** and 
+results are just dumped to standard out.
